@@ -1,0 +1,6 @@
+platform :ios, '7.0'
+pod 'AFNetworking', '~> 2.0'
+pod 'SSToolkit'
+pod 'SDWebImage', '~> 3.5.2'
+pod 'BSKeyboardControls', '~> 2.0'
+pod 'MBProgressHUD', '~> 0.8'

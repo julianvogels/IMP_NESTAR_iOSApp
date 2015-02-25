@@ -1,0 +1,78 @@
+PODS:
+  - AFNetworking (2.2.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.1):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.1)
+  - AFNetworking/Security (2.2.1)
+  - AFNetworking/Serialization (2.2.1)
+  - AFNetworking/UIKit (2.2.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BSKeyboardControls (2.2)
+  - MBProgressHUD (0.8)
+  - SAMAddressBar (0.1.0)
+  - SAMBadgeView (0.1.0)
+  - SAMCategories (0.4.1)
+  - SAMCircleProgressView (0.1.1)
+  - SAMGradientView (0.2.1)
+  - SAMHUDView (0.1.2)
+  - SAMLabel (0.1.0)
+  - SAMLoadingView (0.1.0)
+  - SAMRateLimit (0.2.0)
+  - SAMTextField (0.1.1)
+  - SAMTextView (0.2.1)
+  - SAMWebView (0.2.1)
+  - SDWebImage (3.5.4):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.4)
+  - SSToolkit (2.0.0):
+    - SAMAddressBar
+    - SAMBadgeView
+    - SAMCategories
+    - SAMCircleProgressView
+    - SAMGradientView
+    - SAMHUDView
+    - SAMLabel
+    - SAMLoadingView
+    - SAMRateLimit
+    - SAMTextField
+    - SAMTextView
+    - SAMWebView
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - BSKeyboardControls (~> 2.0)
+  - MBProgressHUD (~> 0.8)
+  - SDWebImage (~> 3.5.2)
+  - SSToolkit
+
+SPEC CHECKSUMS:
+  AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  BSKeyboardControls: 6c1f5e5e6ccc27fc1a5e7c30268fb4953de28352
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  SAMAddressBar: ff6cbd5670ec686581a9fe8c98e79a81406df7ee
+  SAMBadgeView: 7eba9d24f817ed27c0a22ae0ae71e9e4577a7522
+  SAMCategories: 141c86a5bf56165c9232fda04c88b547bc1ad2b9
+  SAMCircleProgressView: 2da5c92b83e71f4ca587fa8128e5cf87d76c36c4
+  SAMGradientView: ab5543a14a69ecf5fc10239091740291c50b328c
+  SAMHUDView: c7f9c5c340a6ea1f50f3f469ec2ba35d0ed724dd
+  SAMLabel: 0c3c394118180261769e3b6f0b48a5501e4fb462
+  SAMLoadingView: aaab718284bfe0e28c2303ba765329f068d173e9
+  SAMRateLimit: 22b0ba0fafa8a9c438b7f76e4182914ef704c701
+  SAMTextField: 5cc022dd9f6bd9a6f8b561984cc836d2bad879d2
+  SAMTextView: f0dae9662a7cc45e890eb2b24aa1769148ea2933
+  SAMWebView: ea897a645ac8ce086e67c63a926b5c3b8cf48acc
+  SDWebImage: 1a62010700adbba823b621fc217906739dbf6aa5
+  SSToolkit: 84435c4058b756386d83696c6df78cd13017d2b3
+
+COCOAPODS: 0.29.0

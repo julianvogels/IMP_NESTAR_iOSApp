@@ -12,9 +12,55 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // force view class to load so it may be referenced directly from NIB
+    [ZBarReaderView class];
+    
+    // UIPageControle design customisation
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    
+    
+    // Register the preference defaults early.
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstlaunch"]) {
+        // subsequent launch
+    } else {
+        //first launch
+        
+        
+        [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],@"firstLaunch",[NSNumber numberWithBool:NO], @"displayScanner", nil]];
+    }
+
+    
+//    // check for Settings to enable the scanner
+//    UITabBarController *tabController = (UITabBarController *)self.window.rootViewController;
+//    NSLog(@"TAB BAR CONTROLLER COUNT: %lu", (unsigned long)[tabController.viewControllers count]);
+//    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"displayScanner"]) {
+//        if ([tabController.viewControllers count]==2) {
+//            // scanner was removed, has to be added again
+//            UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];
+//            UINavigationController *scannerController = [mainStoryboard instantiateViewControllerWithIdentifier:@"scannerNavigationController"];
+//            NSMutableArray *tbViewControllers = [NSMutableArray arrayWithArray:[tabController viewControllers]];
+//            [tbViewControllers insertObject:scannerController atIndex:1];
+//            [tabController setViewControllers:tbViewControllers];
+//        }
+//    } else {
+//        if ([tabController.viewControllers count]==3) {
+//            // remove scanner
+//            NSMutableArray *tbViewControllers = [NSMutableArray arrayWithArray:[tabController viewControllers]];
+//            [tbViewControllers removeObjectAtIndex:1];
+//            [tabController setViewControllers:tbViewControllers];
+//        }
+//    }
+//    
+//    // set tabbar to opaque (doen't seem to have any effect?)
+//    [tabController.tabBar setOpaque:YES];
+    
     return YES;
 }
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
